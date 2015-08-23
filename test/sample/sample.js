@@ -9,9 +9,9 @@ var crawler = new Crawler();
 
 crawler.loadPlugin(__dirname + "/../../");
 
-crawler.ready(function() {
+crawler.start(function() {
   
-  this.promise()
+  return this.promise()
     .extract(__dirname + "/sample.json","$..url")
     .then(function(values) {
       assert.deepEqual(values,["/","/"]);
@@ -33,10 +33,7 @@ crawler.ready(function() {
         ["13/09/2013","02/09/2013"],
         ["Declara"]
       ]);
-    })
-    .exit();
+    });
 });
-
-crawler.start();
 
 // - -------------------------------------------------------------------- - //
