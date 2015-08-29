@@ -1,7 +1,7 @@
 {
-  "name": "bauer-crawler-extract",
+  "name": "bauer-plugin-extract",
   "version": "0.1.5",
-  "description": "Plugin for bauer-crawler to extract values from JSON data.",
+  "description": "Plugin for bauer to extract values from JSON data.",
   "keywords": [
     "multi-thread",
     "multi-core",
@@ -13,7 +13,7 @@
     "fetch"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/yneves/node-bauer-crawler-extract",
+  "homepage": "https://github.com/yneves/node-bauer-plugin-extract",
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com/",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yneves/node-bauer-crawler-extract.git"
+    "url": "https://github.com/yneves/node-bauer-plugin-extract.git"
   },
   "scripts": {
     "test": "mocha"

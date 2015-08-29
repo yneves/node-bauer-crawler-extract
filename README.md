@@ -1,2 +1,2 @@
-# node-bauer-crawler-extract
-Plugin for bauer-crawler to extract values from JSON data.
+# node-bauer-plugin-extract
+Plugin for bauer to extract values from JSON data.
