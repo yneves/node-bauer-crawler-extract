@@ -11,7 +11,7 @@ crawler.loadPlugin(__dirname + "/../../");
 
 crawler.start(function() {
   
-  return this.promise()
+  return this.Promise
     .extract(__dirname + "/sample.json","$..url")
     .then(function(values) {
       assert.deepEqual(values,["/","/"]);

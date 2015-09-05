@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-extract",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Plugin for bauer to extract values from JSON data.",
   "keywords": [
     "multi-thread",
@@ -30,10 +30,10 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-cache": "^0.1.5",
-    "bauer-crawler": "^0.1.7",
-    "bauer-factory": "^2.0.3",
-    "jsonpath": "^0.1.8"
+    "bauer-cache": "*",
+    "bauer-crawler": "^0.2.2",
+    "bauer-factory": "*",
+    "jsonpath": "*"
   },
   "main": "lib/index.js"
 }
