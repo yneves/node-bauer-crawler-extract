@@ -33,6 +33,38 @@ crawler.start(function() {
         ["13/09/2013","02/09/2013"],
         ["Declara"]
       ]);
+    })
+    .extract(__dirname + "/sample.json","$")
+    .then(function(value) {
+      assert.deepEqual(value,{
+          "title": "Stream Node.js v0.10.31 Manual & Documentation",
+          "ids": [
+              {
+                "url": "/",
+                "title": "Go back to the home page"
+              },
+              {
+                "url": "/",
+                "title": "Go back to the home page"
+              }
+          ]
+      });
+    })
+    .extract(__dirname + "/sample.json",{ json: true, raw: true })
+    .then(function(value) {
+      assert.deepEqual(value,{
+          "title": "Stream Node.js v0.10.31 Manual & Documentation",
+          "ids": [
+              {
+                "url": "/",
+                "title": "Go back to the home page"
+              },
+              {
+                "url": "/",
+                "title": "Go back to the home page"
+              }
+          ]
+      });
     });
 });
 

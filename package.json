@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-extract",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plugin for bauer to extract values from JSON data.",
   "keywords": [
     "multi-thread",
